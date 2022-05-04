@@ -1,0 +1,51 @@
+{
+  "name": "babel-plugin-tailwind-rn",
+  "version": "2.0.3",
+  "description": "Allows you to use className='w-full md:w-1/2' syntax in your react native projects.",
+  "license": "MIT",
+  "repository": "OwenMelbz/babel-plugin-tailwind-rn",
+  "author": "Owen Melbourne <owenmelbz@gmail.com>",
+  "engines": {
+    "node": ">=4"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "babel src -d dist --ignore *.test.js,__fixtures__",
+    "prepublish": "npm run build",
+    "fmt": "prettier --write '**/*.{js,json}'",
+    "lint": "eslint src"
+  },
+  "keywords": [
+    "babel",
+    "babel-plugin",
+    "react-native",
+    "tailwind"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "eslint": "^7.1.0",
+    "eslint-config-precure": "^5.4.0",
+    "flow-bin": "^0.126.1",
+    "postcss": "^7.0.32",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-native": "^0.62.2",
+    "tailwindcss": "^1.4.6"
+  },
+  "dependencies": {
+    "css": "^2.2.4",
+    "css-to-react-native": "^3.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^7",
+    "react": "^16",
+    "react-native": "^0",
+    "tailwindcss": "^1.4"
+  }
+}
